@@ -18,7 +18,7 @@ const Absence = () => {
     const [isAccordianOpen, setIsAccordianOpen] = useState<boolean>(false)
 
     const handleEvent = () => {
-        navigate('/addAddress')
+        navigate('/addAbsence')
     }
 
     console.log('isAccordianOpen', {isAccordianOpen})
