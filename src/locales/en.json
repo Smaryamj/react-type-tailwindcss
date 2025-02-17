@@ -24,5 +24,8 @@
     "callCenters":"Call Centers",
     "faq":"FAQ",
     "feedback":"Feedback",
-    "logout":"Logout"
+    "logout":"Logout",
+    "sicknessText": "Sickness",
+    "busSchoolText": "Bus & School",
+    "afternoonText": "Afternoon"
 }

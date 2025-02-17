@@ -9,6 +9,7 @@ import AddNewAddress from './pages/address/addNewAddress';
 import RouteStatus from '../src/pages/routeStatus';
 import EditAddress from './pages/address/editAddress';
 import UserProfile from './pages/profile';
+import Absence from './pages/absences';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/routeStatus' element={<RouteStatus />} />
           <Route path='/editAddress' element={<EditAddress />} />
           <Route path='/profile' element={<UserProfile />} />
+          <Route path='/absence' element={<Absence />} />
         </Routes>
       </BrowserRouter>
     </>

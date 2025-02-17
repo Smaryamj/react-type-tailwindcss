@@ -14,6 +14,7 @@ module.exports = {
         aquaBlue: '#A8DFFC',
         aquaBlueLight: '#C0E9FF',
         mainBlueTint: '#809DAD',
+        mainBlueTint2: '#B2C4CE',
       },
       fontFamily: {
         'sf-pro-rounded': ['SF Pro Rounded', 'sans-serif'],
