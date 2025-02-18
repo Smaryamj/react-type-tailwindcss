@@ -17,7 +17,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const savedLocalLang = 'en';
+  const savedLocalLang = localStorage.getItem("themeLanguage") as LocalLang || "en";
   const [localeLang, setLocalLang] = useState<LocalLang>(savedLocalLang)
 
   // Function to toggle theme
@@ -25,7 +25,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const toggleLocaleLang = (_t: string) => {
     const newLang = _t === "en" ? "en" : "ar";
     setLocalLang(newLang);
-    localStorage.setItem("themeColor", newLang); // Save theme to localStorage
+    localStorage.setItem("themeLanguage", newLang); // Save theme to localStorage
   };
 
   return (
