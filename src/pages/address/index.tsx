@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"
 import CustomCard from "../../components/customCardAddress";
 import ModalMenu from "../../components/modalAddress";
 import DeleteModalAddress from "../../components/deleteModalAddress";
+import { useLangugageContext } from "../../contextAPI/contextAPI";
 
 interface AddressListProps{
     pickUpType: string,
@@ -22,6 +23,8 @@ const Address = () => {
     const handleEvent = () => {
         navigate('/addAddress')
     }
+
+    const { localeLang, toggleLocaleLang } = useLangugageContext();
 
     useEffect(() => {
         if(!!propsData){
@@ -42,7 +45,7 @@ const Address = () => {
     }
 
     return(
-        <div>
+        <div className={`${localeLang === 'en' ? 'ltr' : 'rtl'}`}>
             {!!addressList && !(addressList.length > 0) && (
                 <div className="h-screen flex items-center justify-center bg-gray-100">
                     <div className="flex items-center mx-[5.5rem] sm:mx-[5.5rem] text-center justify-center h-screen m-0 bg-gray-100">

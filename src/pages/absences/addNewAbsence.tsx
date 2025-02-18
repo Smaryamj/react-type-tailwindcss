@@ -23,7 +23,7 @@ const AddNewAbsence = () => {
 
     return(
         <div className="m-5">
-            <div className="w-8 h-8 flex justify-center items-center border-1 rounded-full bg-mainGray2">
+            <div onClick={() => navigate('/absence')} className="w-8 h-8 flex justify-center items-center border-1 rounded-full bg-mainGray2">
                 <img src={CancelSVG} />
             </div>
             <h1 className="my-5 text-[48px] font-sf-pro-rounded text-mainBlue font-bolder">
