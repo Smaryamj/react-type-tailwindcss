@@ -27,6 +27,7 @@ export const ConfigRoutes = () => {
             <Route path='/editAddress' element={<EditAddress />} />
             <Route path='/absence' element={<Absence />} />
             <Route path='/addAbsence' element={<AddNewAbsence />} />
+            <Route path='/profile' element={<UserProfile />} />
           </Routes>
         </BrowserRouter>
     </>

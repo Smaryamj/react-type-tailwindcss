@@ -1,7 +1,7 @@
 import React from "react";
 import AppBar from "../components/appbar";
 import { useNavigate } from "react-router-dom";
-import EditSVG from '../../icons/edit.svg';
+import EditSVG from "../icons/edit.svg";
 
 const UserProfile = () => {
   const navigate = useNavigate(); // React Router for navigation
