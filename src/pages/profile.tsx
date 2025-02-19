@@ -1,5 +1,5 @@
 import React from "react";
-import AppBar from "../../components/appbar";
+import AppBar from "../components/appbar";
 import { useNavigate } from "react-router-dom";
 import EditSVG from '../../icons/edit.svg';
 

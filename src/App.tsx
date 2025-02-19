@@ -8,7 +8,7 @@ import '../src/configure/i18n/i18n'
 import AddNewAddress from './pages/address/addNewAddress';
 import RouteStatus from '../src/pages/routeStatus';
 import EditAddress from './pages/address/editAddress';
-import UserProfile from './pages/address/profile';
+import UserProfile from './pages/profile';
 
 
 function App() {
